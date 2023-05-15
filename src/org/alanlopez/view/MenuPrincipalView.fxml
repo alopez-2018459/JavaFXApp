@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="1082.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alanlopez.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="672.0" fitWidth="1155.0" layoutX="-71.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/backgroundClinica.jpg" />
+         </image>
+      </ImageView>
+      <Circle fill="#0049ad" layoutX="734.0" layoutY="341.0" radius="130.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Circle>
+      <MenuBar prefHeight="48.0" prefWidth="1089.0" stylesheets="@../resource/SmileCare2018459.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="Módulos">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Pacientes" />
+              <MenuItem fx:id="btnCerrar" mnemonicParsing="false" onAction="#terminar" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="208.0" fitWidth="201.0" layoutX="634.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/LogoClinicaDental.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="38.83" />
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0000008c" height="180.0" layoutY="399.0" stroke="BLACK" strokeType="INSIDE" width="242.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0049ad" height="180.0" layoutY="399.0" stroke="#0049ad" strokeType="INSIDE" width="236.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/LogoClinicaDental2.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-20.0" layoutY="259.0" prefHeight="97.0" prefWidth="423.0" styleClass="pane" stylesheets="@../resource/SmileCare2018459.css">
+         <children>
+            <Label layoutX="31.0" layoutY="23.0" text="Smile Care - Clínica" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
